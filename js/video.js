@@ -15,22 +15,24 @@ pauseButton.addEventListener("click", function(){
     console.log("paused");
 
 });
+var slowerbtn = document.getElementById('slower');
+
 document.querySelector("#slower").addEventListener("click", function() {
-	if (video.playbackRate === 0.5) {
+	if (vid.playbackRate === 0.5) {
 		window.alert("Video is at slowest speed!");
-	} else if (video.playbackRate === 1) {
-		video.playbackRate = 0.5;
-	} else if (video.playbackRate === 2) {
-		video.playbackRate = 0.5;
+	} else if (vid.playbackRate === 1) {
+		vid.playbackRate = 0.5;
+	} else if (vid.playbackRate === 2) {
+		vid.playbackRate = 0.5;
 	}
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
-	if (video.playbackRate === 0.5) {
-		video.playbackRate = 1;
-	} else if (video.playbackRate === 1) {
-		video.playbackRate = 2;
-	} else if (video.playbackRate === 2) {
+	if (vid.playbackRate === 0.5) {
+		vid.playbackRate = 1;
+	} else if (vid.playbackRate === 1) {
+		vid.playbackRate = 2;
+	} else if (vid.playbackRate === 2) {
 		window.alert("Video is at fastest speed!");
 	}
 });

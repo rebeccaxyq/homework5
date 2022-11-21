@@ -2,6 +2,12 @@
 //1.play
 var vid = document.getElementById("videoplayer");
 
+window.addEventListener("load", function() {
+    vid.loop = false;
+    vid.autoplay = false;
+    vid.load();
+});
+
 var playButton = document.getElementById("play");
 playButton.addEventListener("click", function() 
 {
